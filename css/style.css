@@ -1,0 +1,255 @@
+/* html {
+  width: 80%;
+  margin: 0.5% auto;
+  box-sizing: border-box;
+} */
+
+* {
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  line-height: 135%;
+  letter-spacing: 0.8px;
+  color: #000;
+}
+
+.body-bg {
+  background-image: url("../images/30c38ca256550c58e41c615d9f28598c.jpg");
+  background-size: cover;
+}
+
+.color-grey {
+  color: #4b4b4b;
+}
+
+.container {
+  box-sizing: border-box;
+  /* inline-size: 90%; */
+  margin: 1% auto;
+  width: 90%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "IBM Plex Serif", serif;
+}
+
+.cv-header {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 2.7rem;
+  color: #000;
+  letter-spacing: 1.5px;
+}
+.profile,
+.expirience,
+.company-name {
+  font-family: "IBM Plex Serif", serif;
+}
+
+h2 {
+  text-align: center;
+}
+.cv {
+  margin-top: 50px;
+  border: 1px solid #4b4b4b;
+  box-shadow: 1px 1px 10px #000;
+}
+
+.cv-left {
+  background: #4b4b4b;
+  min-height: 30vh;
+  color: #fff;
+}
+
+.cv-right {
+  background: #fff;
+  min-height: 30vh;
+  color: #000;
+}
+/* .cv-left a */
+a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.company {
+  color: #000;
+  text-decoration: none;
+}
+
+/* .cv-left a:hover */
+a:hover {
+  text-decoration: none;
+  color: #72aad2;
+  box-shadow: 1px 1px 10px #72d2b2;
+}
+
+a.home_link:hover {
+  text-decoration: none;
+  background:none;
+  box-shadow:none;
+}
+
+.cv-left ul {
+  line-height: 200%;
+  padding-left: 15%;
+  list-style-type: none;
+  letter-spacing: 1px;
+}
+
+.cv-left ul.contacts-block {
+  list-style-type: none;
+  padding-left: 23%;
+}
+
+.profile {
+  /* line-height: 150%; */
+  padding-left: 15px;
+  margin-left: 15px;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.profile-description {
+  line-height: 160%;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.company-block {
+  list-style-type: none;
+  line-height: 150%;
+  font-size: 1.1rem;
+  letter-spacing: 0.8px;
+  padding-left: 20px;
+  color: #000;
+}
+
+.company-block-description {
+  list-style-type: circle;
+  line-height: 160%;
+  font-size: 1.1rem;
+  letter-spacing: 0.9px;
+  margin-left: 10px;
+  padding-left: 30px;
+  color: #000;
+}
+
+.cv-left .address {
+  font-style: italic;
+}
+
+article {
+  padding: 20px;
+}
+
+.company-name {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.job-title {
+  font-size: 1.3 rem;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.lines {
+  overflow: hidden;
+}
+.lines::before,
+.lines::after {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 3px;
+  background: #4b4b4b;
+  border: 1px solid #fff;
+  vertical-align: middle;
+}
+
+.lines::before {
+  margin-left: -100%;
+}
+
+.lines::after {
+  margin-right: -100%;
+}
+
+@media (max-width: 991.98px) {
+  .cv-left h1,
+  .cv-left h2,
+  .cv-left h3,
+  .cv-left h4 {
+    font-size: 1.3rem;
+  }
+  .cv-left ul {
+    line-height: 150%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    margin-bottom: 0;
+  }
+  .cv {
+    margin-top: 0;
+  }
+}
+
+.photo-block img {
+  display: block;
+  max-width: 75%;
+  margin: 20px auto;
+}
+
+.portfolio {
+  background: #4b4b4b;
+  min-height: 15vh;
+  color: #fff;
+}
+
+.main {
+  background: #fff;
+  min-height: 60vh;
+  color: #000;
+}
+
+.bottom-block {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+
+#button_lng {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  margin: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #4b4b4b;
+  font-family: "IBM Plex Serif", serif;
+}
+
+.home {
+  display: inline-block;
+  padding: 50px 40%;
+}
